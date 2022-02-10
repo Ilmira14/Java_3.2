@@ -1,6 +1,6 @@
 public class BmiService {
-    public int calculate(int weight, int height){
-        int bodyMassIndex = weight * 10000 / height / height;
+    public double calculate(int weight, int height){
+        double bodyMassIndex = weight * 10000 * 100 / height / height; // * 100 чтобы получить число с сотыми долями
 
         return bodyMassIndex;
     }
